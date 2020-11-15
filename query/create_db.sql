@@ -1,0 +1,2 @@
+CREATE DATABASE webserver default CHARACTER SET UTF8;
+
