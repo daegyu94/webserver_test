@@ -24,7 +24,7 @@
                         if(isset($_SESSION['userid'])){
                         ?>      <script>
                                         alert("Login Success");
-                                        location.replace("./index.php");
+                                        location.replace("./index.html");
                                 </script>
 <?php
                         }
