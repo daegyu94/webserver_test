@@ -8,7 +8,7 @@
                 $content = $_GET[content];              //Content
                 $date = date('Y-m-d H:i:s');            //Date
  
-                $URL = './it_contact_2.html';                   //return URL
+                $URL = './bulletin.php';                   //return URL
  
  
                 $query = "insert into board (number, title, content, date, hit, id, password) 
