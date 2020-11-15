@@ -1,5 +1,6 @@
 <?php
-                $connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
+                //$connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
+                $connect = mysqli_connect('dgmysql-1.ciuitd0uxvp3.ap-northeast-2.rds.amazonaws.com', 'admin', 'daegyu123', 'webserver') or die("fail");
                 $number = $_GET['number'];
                 session_start();
                 $query = "select title, content, date, hit, id from board where number =$number";

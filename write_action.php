@@ -1,5 +1,6 @@
 <?php
-                $connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
+                //$connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
+                $connect = mysqli_connect('dgmysql-1.ciuitd0uxvp3.ap-northeast-2.rds.amazonaws.com', 'admin', 'daegyu123', 'webserver') or die("fail");
                 
                 $id = $_GET[name];                      //Writer
                 $pw = $_GET[pw];                        //Password

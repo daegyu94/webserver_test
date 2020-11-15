@@ -2,14 +2,14 @@
  
         session_start();
  
-        $connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail"); 
+        $connect = mysqli_connect('dgmysql-1.ciuitd0uxvp3.ap-northeast-2.rds.amazonaws.com', 'admin', 'daegyu123', 'webserver') or die("fail"); 
 
         //입력 받은 id와 password
         $id=$_GET['id'];
         $pw=$_GET['pw'];
  
         //아이디가 있는지 검사
-        $query = "select * from member where id='$id'";
+        $query = "SELECT * FROM member WHERE id='$id'";
         $result = $connect->query($query);
  
  

@@ -1,7 +1,7 @@
 <?php
  
-        $connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
- 
+       //$connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
+        $connect = mysqli_connect('dgmysql-1.ciuitd0uxvp3.ap-northeast-2.rds.amazonaws.com', 'admin', 'daegyu123', 'webserver') or die("fail"); 
  
         $id=$_GET[id];
         $pw=$_GET[pw];
@@ -10,7 +10,7 @@
         $date = date('Y-m-d H:i:s');
  
         //입력받은 데이터를 DB에 저장
-        $query = "INSERT IGNORE INTO MEMBER (id, pw, email, date, permit) VALUES ('$id', '$pw', '$email', '$date', 0)";
+        $query = "INSERT IGNORE INTO member (id, pw, email, date, permit) VALUES ('$id', '$pw', '$email', '$date', 0)";
  
  
         $result = $connect->query($query);

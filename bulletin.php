@@ -34,7 +34,8 @@
 <body>
 
         <?php
-                $connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
+                //$connect = mysqli_connect('127.0.0.1', 'root', 'daegyu123', 'webserver') or die("fail");
+                $connect = mysqli_connect('dgmysql-1.ciuitd0uxvp3.ap-northeast-2.rds.amazonaws.com', 'admin', 'daegyu123', 'webserver') or die("fail");
                 $query ="select * from board order by number desc";
                 $result = mysqli_query($connect, $query);
                 $total = mysqli_num_rows($result);
